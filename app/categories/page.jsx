@@ -1,11 +1,13 @@
 import React from 'react';
 
-const page = () => {
+const CategoriesPage = () => {
+    console.log(names);
+    
     return (
-        <div>
-            category page
+        <div className='h-screen'>
+            category page....
         </div>
     );
 };
 
-export default page;
+export default CategoriesPage;

@@ -19,6 +19,11 @@ const Navbar = () => {
         {
             title: 'blog',
             path: '/blog'
+        },
+        
+        {
+            title: 'Categories',
+            path: '/categories'
         }
     ]
 
@@ -40,15 +45,15 @@ const Navbar = () => {
             {links.map(link => <Link key={link.title} href={link.path}  className={`${pathName === link.path && 'text-red-500 font-semibold'}`}>{link.title}</Link>)}
          </ul>
 
-         {/* <div className='flex items-center gap-2'>
+         <div className='flex items-center gap-2'>
             <Link href={'/dashboard'} className='w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center'>U</Link>
              <div>
              <p className='text-xs'>Umayer Hossain</p>
              <p className='text-xs'>umayerpro174@gmail.com</p>
              </div>
-         </div> */}
+         </div>
 
-         <button onClick={handle} className='bg-orange-500 p-2'>Login</button>
+         {/* <button onClick={handle} className='bg-orange-500 p-2'>Login</button> */}
       </nav>
     );
 };
